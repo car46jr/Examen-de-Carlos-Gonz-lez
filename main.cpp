@@ -129,7 +129,27 @@ int dia;
 		cout << "no es un dia de la semana" << endl;
 	}
 	break;
+	
+case 5: 
 
+float cl;
+	float cont;
+	cont = 0;
+	do { /* Espacio donde se encuentra para ingresar el codigo*/
+		cout << "" << endl;
+		cout << "Ingresar clave :" << endl;
+		cout << "" << endl;
+		cin >> cl;
+		if (cl==123456) {
+			cout << "Bienvenido a tu banca virtual " << endl;
+			// cont=cont-1
+		} else {
+			cout << "la clave es incorrecta en su intento  " << cont+1 << endl;
+			cont = cont+1;
+		}
+	} while (!(cont==3 || cont<1));
+
+break ;
 	
 }
 
